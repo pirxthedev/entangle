@@ -1,0 +1,32 @@
+[package]
+name = "entangle"
+version = "0.1.0"
+edition = "2021"
+description = "Real-time collaborative text file sync via CRDT"
+
+[lib]
+name = "entangle"
+path = "src/lib.rs"
+
+[[bin]]
+name = "entangle"
+path = "src/main.rs"
+
+[dependencies]
+yrs = "0.21"
+similar = "2"
+notify = "6"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.24", features = ["rustls-tls-native-roots"] }
+futures-util = "0.3"
+clap = { version = "4", features = ["derive"] }
+rand = "0.8"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"
+url = "2"
+tempfile = "3"
+
+[dev-dependencies]
+proptest = "1"
+tokio = { version = "1", features = ["full", "test-util"] }
