@@ -69,6 +69,10 @@ enum Commands {
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    rustls::crypto::ring::default_provider()
+        .install_default()
+        .ok();
+
     let cli = Cli::parse();
 
     let log_level = if cli.verbose { "debug" } else { "info" };
