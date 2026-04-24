@@ -10,7 +10,7 @@ name = "entangle"
 path = "src/lib.rs"
 
 [[bin]]
-name = "entangle"
+name = "entangle-sync"
 path = "src/main.rs"
 
 [dependencies]
