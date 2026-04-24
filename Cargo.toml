@@ -3,13 +3,14 @@ name = "entangle"
 version = "0.1.0"
 edition = "2021"
 description = "Real-time collaborative text file sync via CRDT"
+license = "MIT"
 
 [lib]
 name = "entangle"
 path = "src/lib.rs"
 
 [[bin]]
-name = "entangle"
+name = "entangle-sync"
 path = "src/main.rs"
 
 [dependencies]
