@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "entangle"
+version = "0.1.0"
+description = "Real-time collaborative text file sync via CRDT"
+readme = "demo.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["crdt", "sync", "collaboration", "files", "websocket"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Environment :: Console",
+    "Topic :: Utilities",
+    "Topic :: Internet",
+]
+
+[tool.maturin]
+bindings = "bin"
