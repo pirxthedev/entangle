@@ -1,0 +1,4 @@
+Hello from entangle!
+
+This is a test file being shared via the entangle real-time collaborative sync tool.
+Edit this file and changes will sync to all connected peers automatically.
